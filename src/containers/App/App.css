@@ -1,0 +1,12 @@
+body,*{
+  box-sizing: border-box;
+  border: 0px;
+  margin: 0px;
+  background: #09131D;
+  font-family: 'Miriam Libre', sans-serif;
+ }
+
+ main{
+   display: flex;
+   flex-direction: column;
+ }

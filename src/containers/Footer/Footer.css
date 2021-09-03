@@ -1,0 +1,10 @@
+.footer__container{
+ 
+display: flex;
+justify-content: flex-end;
+}
+.footer__option{
+    padding-bottom: 30px;
+    margin-right: 60px;
+    color: blanchedalmond;
+}

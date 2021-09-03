@@ -1,0 +1,21 @@
+.home__container{
+display: flex;
+justify-content: center;
+margin-top: 15%;
+}
+.home__text{
+    width: 25%;
+    
+}
+.home__name{
+    font-family: 'Baloo Bhaina 2', cursive;
+    text-align: justify;
+    font-size: 60px;
+}
+.home__descrip{
+    text-align: justify;
+    font-family:;
+}
+.home__img{
+
+}
