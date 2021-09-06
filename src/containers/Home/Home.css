@@ -1,21 +1,24 @@
 .home__container{
 display: flex;
 justify-content: center;
-margin-top: 15%;
+margin-top: 5%;
 }
 .home__text{
     width: 25%;
-    
 }
 .home__name{
+    margin-top: 45%;
     font-family: 'Baloo Bhaina 2', cursive;
     text-align: justify;
     font-size: 60px;
 }
 .home__descrip{
     text-align: justify;
-    font-family:;
+    margin-top: -10%;
+   
 }
 .home__img{
-
+    width: 315px;
+    height: 372px;
+    margin-bottom: 5%;
 }
