@@ -5,7 +5,7 @@ interface AboutPageProps { }
 export const AboutPage: React.FC<AboutPageProps> = () => {
     return (
         <div className="aboutPage__container">
-            <img src="" alt="" className="aboutPage__img" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/portafolio-2e964.appspot.com/o/personal%20photos%2Faboutme.jpg?alt=media&token=30801ef3-e246-4f50-bb9c-65f7e5fd43fa" alt="" className="aboutPage__img" />
             <div className="aboutPage__wrapper">
                 <h2 className="aboutPage__title">About me</h2>
                 <div className="aboutPage__descrip">I am a student of Interactive Media Design at Icesi University, born in the city of Cali, I like to learn and enrich myself with knowledge, I like programming, UX and UI. <br /><br />

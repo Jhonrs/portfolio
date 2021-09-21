@@ -1,0 +1,12 @@
+.projectView{
+    margin-top: 3%;
+    margin-bottom: 5%;
+    max-width: 1440px;
+    box-sizing: border-box; 
+    padding: 0px;
+   
+}
+.projectView__img{
+   margin: -3px;
+    width: 100vw;
+}
