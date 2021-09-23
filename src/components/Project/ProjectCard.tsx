@@ -9,15 +9,16 @@ interface ProjectCardProps {
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({ data: { name, descrip, url } }) => {
     return (
-        
-        <div className="project__container">
-            <a href= {"/work/"+name}   >
+        <a className="project__container" href= {"/work/"+name}   >
+        <div >
+           
             <div className="project__wrapper">
                 <h2 className="project__title">{name}</h2>
                 <p className="project__descrip">{descrip}</p>
             </div>
             <img src={url} alt="" className="project__img" />
-            </a>
+       
         </div>
+        </a>
     );
 }

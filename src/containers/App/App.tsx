@@ -12,6 +12,7 @@ import particlesConfig from '../../utils/ParticlesConfig';
 import { db } from '../../utils/firebase.js';
 import { doc, getDoc, getDocs, collection } from 'firebase/firestore';
 import { ProjectView } from '../../components/ProjectView/ProjectView';
+import { ContactPage } from '../ContactPage/ContactPage';
 
 export const App = () => {
 
@@ -41,8 +42,8 @@ export const App = () => {
         <Route path='/' exact render={() => <Home/>} />
         <Route path='/work' exact render={()=> <WorkPage/>}/>
         <Route path='/work/:id' render={()=> <ProjectView/>}/>
-        <Route path='/about_me'render={()=> <AboutPage/>}/>
-        <Route path='/contact'></Route>
+        <Route path='/about_me' render={()=> <AboutPage/>}/>
+        <Route path='/contact' render={()=><ContactPage/>}/>
 
         <Footer></Footer>
       </Router>
