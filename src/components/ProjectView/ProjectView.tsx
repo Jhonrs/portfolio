@@ -4,21 +4,21 @@ import { db } from '../../utils/firebase';
 import { collection, query, where, getDocs } from 'firebase/firestore';
 import './ProjectView.css';
 
-export const ProjectView = ()=>{
+export const ProjectView = () => {
     const [data, setData] = useState([]),
         { id } = useParams<any>();
 
     const getData = async () => {
         try {
             const projectsRef = collection(db, 'projects');
-    
+
             const filter = query(projectsRef, where('name', '==', id));
-    
+
             const docSnapshot = await getDocs(filter);
             docSnapshot.forEach(doc => {
                 setData(doc.data().img);
             });
-        } catch(error) {
+        } catch (error) {
             console.error(error);
         }
     }
@@ -29,8 +29,8 @@ export const ProjectView = ()=>{
 
     return (
         <div className="projectView">
-            {data.map((img:string) => 
-                <img className="projectView__img" src={img} alt=""/>)}
+            {data.map((img: string) =>
+                <img className="projectView__img" src={img} alt="" />)}
         </div>
     );
 }

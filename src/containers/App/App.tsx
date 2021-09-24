@@ -38,7 +38,6 @@ export const App = () => {
     <main><ParticlesBackground data={particlesConfig}></ParticlesBackground>
       <Router>
         <NavBar></NavBar>
-
         <Route path='/' exact render={() => <Home/>} />
         <Route path='/work' exact render={()=> <WorkPage/>}/>
         <Route path='/work/:id' render={()=> <ProjectView/>}/>
@@ -47,8 +46,6 @@ export const App = () => {
 
         <Footer></Footer>
       </Router>
-
-
     </main>
   );
 };
