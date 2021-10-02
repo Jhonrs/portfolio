@@ -15,7 +15,13 @@ export const AboutPage: React.FC<AboutPageProps> = () => {
                     On the other hand, as for my programming skills I have participated in various activities related to this, during some courses at the University to part of the group of programmers, I have knowledge in JavaScript, Java and C-sharp. I have used Unity, and the React framework, currently I want and I see an opportunity to learn React-Native.<br /><br />
 
                     I am currently looking for a company to do my internship so I can complete my academic knowledge and experience projects and job responsibilities.</div>
+           
+           <br />
+            <a className="aboutPage__cv" href="https://firebasestorage.googleapis.com/v0/b/portafolio-2e964.appspot.com/o/CV%20Jhon%20Reyes.pdf?alt=media&token=bcc92a0d-ebe0-46ef-8946-72ca82cf54e8" target="_blank">CV English version</a>
+           
+            <a className="aboutPage__cv" href="https://firebasestorage.googleapis.com/v0/b/portafolio-2e964.appspot.com/o/HV%20Jhon%20Reyes.pdf?alt=media&token=0723dd07-e1a0-4547-9ad4-de381a9b3b88" target="_blank">CV Spanish version</a>
             </div>
+
         </div>
     );
 }

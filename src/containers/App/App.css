@@ -8,6 +8,7 @@ body{
   background: #09131D;
   font-family: 'Miriam Libre', sans-serif;
   overflow-x: hidden;
+  text-decoration: none;
  }
 
  main{
