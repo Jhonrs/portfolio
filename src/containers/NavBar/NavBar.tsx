@@ -1,10 +1,35 @@
-import React from 'react';
-import { Link, Route } from 'react-router-dom';
-import { Home } from '../Home/Home';
+import React, { useState } from 'react';
+import { Link, useLocation} from 'react-router-dom';
 import './NavBar.css';
 interface NavBarProps { }
 
 export const NavBar: React.FC<NavBarProps> = () => {
+
+const location = useLocation();
+console.log(location);
+const link=[
+    {
+        path:"/",
+        label: "Home"
+    }, 
+    {
+        path:"/work",
+        label: "Work"
+    },
+    {
+        path:"/about_me",
+        label: "About me"
+    },
+    {
+        path:"/contact",
+        label: "Contact"
+    },
+];
+
+
+
+const [links, setLinks] = useState(link);
+
     return (
         <div className="navBar_container">
             <a href="/">
@@ -13,10 +38,8 @@ export const NavBar: React.FC<NavBarProps> = () => {
             </div>
             </a>
             <div className="navBar__options">
-                <Link to="/" className="nav__option"> Home</Link>
-                <Link to="/work" className="nav__option"> Work</Link>
-                <Link to="/about_me" className="nav__option"> About me</Link>
-                <Link to="/contact" className="nav__option"> Contact</Link>
+               {links.map(link=>
+                 <Link to={link.path} className={`nav__option ${link.path===location.pathname ? "nav__option--active": ""}`}> {link.label}</Link>)}
             </div>
 
 

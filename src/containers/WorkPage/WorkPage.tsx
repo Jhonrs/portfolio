@@ -27,7 +27,7 @@ const TEST_DATA = [
         descrip: "Design",
         url: "https://firebasestorage.googleapis.com/v0/b/portafolio-2e964.appspot.com/o/jejhomiv2.jpg?alt=media&token=2d281483-10b8-412b-9f05-c7b421578efe"
     }, {
-        name: "Marca Personal",
+        name: `Marca \nPersonal`,
         descrip: "Design",
         url: "https://firebasestorage.googleapis.com/v0/b/portafolio-2e964.appspot.com/o/Behance-marca-personal_Mesa-de-trabajo-1v2.jpg?alt=media&token=1f99caf7-68fa-4a1f-aeb3-9d725527b0a5"
     },

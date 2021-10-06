@@ -1,9 +1,9 @@
-.workPage__container{
+.workPage__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
     margin-bottom: 60px;
     max-width: 900px;
-    
 }
+

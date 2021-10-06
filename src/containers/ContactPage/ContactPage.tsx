@@ -5,9 +5,6 @@ interface ContactPageProps { }
 
 export const ContactPage: React.FC<ContactPageProps> = () => {
 
-  const goToThanksPage = () =>{
-    <Redirect to='/ThanksPage'></Redirect>
-}
 
   return (
 
